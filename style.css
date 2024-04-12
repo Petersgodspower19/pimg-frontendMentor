@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Libre Franklin", sans-serif;
+}
+body{
+    font-size: 20px;
+}
+header{
+    margin: 4rem 0;
+    text-align: center;
+}
+.first-container{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.first-container h2{
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+.first-container span{
+    color: hsl(209, 33%, 12%);
+    font-weight: 1000;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputs input{
+    width: 300px;
+    border-radius: 20px;
+    height: 40px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid hsl(223, 100%, 88%);
+}
+#error-message{
+    color: hsl(354, 100%, 66%);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+    display:none ;
+}
+.inputs button{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    width: 300px;
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    box-shadow: 2px 2px 3px hsl(223, 100%, 88%);
+}
+.inputs button:hover{
+    background-color: hsl(223, 100%, 70%);
+    cursor: pointer;
+}
+.second-container{
+    margin:2rem 0 7rem 0;
+    padding: 1.25rem;
+    text-align: center;
+}
+.second-container img{
+    width: 50%;
+}
+.icons{
+    padding: 1.25rem;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 10px;
+    border-color: hsl(223, 87%, 63%);
+}
+.last{
+    margin-top: 1rem;
+    padding: 1.25rem;
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+}
+@media(max-width:768px){
+   .second-container img{
+    width: 70%;
+   }    
+}
+
+
+
+
+@media(min-width:768px){
+    .inputs{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
+    }
+    .inputs button{
+    width: 200px;
+    margin-top: -5px;
+}
+}
